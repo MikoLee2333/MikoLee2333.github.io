@@ -7,7 +7,7 @@
 <title>
     关于QT MSVC编译器使用中文出现“C2001：常量中有换行符”的情况 | MikoLee
 </title>
-<link rel="shortcut icon" href="https://mikolee2333.github.io//favicon.ico?v=1571814249973">
+<link rel="shortcut icon" href="https://mikolee2333.github.io//favicon.ico?v=1571814321426">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -35,7 +35,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://mikolee2333.github.io/">
-                <img class="avatar" src="https://mikolee2333.github.io//images/avatar.png?v=1571814249973" alt="">
+                <img class="avatar" src="https://mikolee2333.github.io//images/avatar.png?v=1571814321426" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -112,7 +112,7 @@
                             <time class="post-time">2019-10-23</time>
                             
                                 <a href="https://mikolee2333.github.io//tag/jdsBtwNuS" class="post-tag i-tag
-                            i-tag-error">
+                            i-tag-other_3">
                             #QT/C++
                         </a>
                                 
@@ -123,9 +123,9 @@
 <!-- more -->
 <pre><code>   在下面代码的位置:
 </code></pre>
-<pre><code>chkBoxBold = new QCheckBox(tr(&quot;粗体&quot;));
-chkBoxUnder = new QCheckBox(tr(&quot;下划线&quot;));
-chkBoxItalic = new QCheckBox(tr(&quot;斜体&quot;));
+<pre><code>    chkBoxBold = new QCheckBox(tr(&quot;粗体&quot;));
+    chkBoxUnder = new QCheckBox(tr(&quot;下划线&quot;));
+    chkBoxItalic = new QCheckBox(tr(&quot;斜体&quot;));
 </code></pre>
 <p>​		编译报错 <u>C2001：常量中有换行符</u> ，在网络上查询资料及部分博客后，总结了以下几种解决方法：</p>
 <hr>
@@ -140,9 +140,9 @@ chkBoxItalic = new QCheckBox(tr(&quot;斜体&quot;));
 <p>​		2、将中文改为英文（笑）</p>
 <hr>
 <p>​		3、在代码中使用中文的地方将中文使用 <code>QString::fromLocal8Bit()</code>括起来，如下所示：</p>
-<pre><code>btnOK = new QPushButton(QString::fromLocal8Bit(&quot;确定&quot;));
-btnCancel = new QPushButton(QString::fromLocal8Bit(&quot;取消&quot;));
-btnClose = new QPushButton(QString::fromLocal8Bit(&quot;退出&quot;));
+<pre><code>    btnOK = new QPushButton(QString::fromLocal8Bit(&quot;确定&quot;));
+    btnCancel = new QPushButton(QString::fromLocal8Bit(&quot;取消&quot;));
+    btnClose = new QPushButton(QString::fromLocal8Bit(&quot;退出&quot;));
 </code></pre>
 <hr>
 <p>​		4、通过文本编辑器将文件格式转换为UTF-8 BOM，将转换出来的文件保存，替换QT工程目录下原本的文件，再重启QT，重新构建。</p>
@@ -173,7 +173,7 @@ btnClose = new QPushButton(QString::fromLocal8Bit(&quot;退出&quot;));
                                 <!-- id-card -->
                                 
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://mikolee2333.github.io//images/avatar.png?v=1571814249973)">
+        <div class="id_card-avatar" style="background-image: url(https://mikolee2333.github.io//images/avatar.png?v=1571814321426)">
         </div>
         <h1 class="id_card-title">
             MikoLee
