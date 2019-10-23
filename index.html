@@ -7,7 +7,7 @@
 <title>
     MikoLee
 </title>
-<link rel="shortcut icon" href="https://mikolee2333.github.io//favicon.ico?v=1571378301513">
+<link rel="shortcut icon" href="https://mikolee2333.github.io//favicon.ico?v=1571814210193">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -27,7 +27,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://mikolee2333.github.io/">
-                <img class="avatar" src="https://mikolee2333.github.io//images/avatar.png?v=1571378301513" alt="">
+                <img class="avatar" src="https://mikolee2333.github.io//images/avatar.png?v=1571814210193" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -99,6 +99,60 @@
         
             <article class="post i-card">
                 <h2 class="post-title">
+                    <a href="https://mikolee2333.github.io//post/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang">
+                        关于QT MSVC编译器使用中文出现“C2001：常量中有换行符”的情况
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2019-10-23</time>
+                    
+                        <a href="https://mikolee2333.github.io//tag/jdsBtwNuS" class="post-tag i-tag
+                            i-tag-primary">
+            #QT/C++
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            ​		最近因为公司的项目是使用的QT+C++，所以在跟着《QT5.9开发指南》开始自学QT，在2.3.2章节教程的中文编码遇到了问题，在下面代码的位置
+chkBoxBold = new QCheckBox(tr(&amp;quot;粗体&amp;quot;));
+chkBoxUnder = new QCheckBox(tr(&amp;quot;下划线&amp;quot;));
+chkBoxItalic = new QCheckBox(tr(&amp;quot;斜体&amp;quot;));
+
+​		编译报错 C2001：常量中有换行符 ，在网络上查询资料及部分博客后，总结了以下几种解决方法：
+
+​		1、修改QT设置。
+​		具体位置：Tools-&amp;gt;Options-&amp;gt;Text Editor-&amp;gt;Behavior-&amp;gt;File Encodings-&amp;gt;UTF-8 BOM，将其修改为Add If Encoding is UTF-8 。
+
+​		然后点击Apply，再点击OK，最后重启QT。此时你就会发现QT中文编译将不会报错，但是中文却变成乱码了。
+​		解决乱码方法有以下两种：
+​				1-1  将代码中每一个中文都用用QStringLiteral()括起来（麻烦，不建议）；
+​				1-2  在对应的.cpp文件前加上#pragma execution_characte上r_set(&amp;quot;utf-8&amp;quot;)。
+
+​		2、将中文改为英文（笑）
+
+​		3、在代码中使用中文的地方将中文使用 QString::fromLocal8Bit()括起来，如下所示：
+btnOK = new QPushButton(QString::fromLocal8Bit(&amp;quot;确定&amp;quot;));
+btnCancel = new QPushButton(QString::fromLocal8Bit(&amp;quot;取消&amp;quot;));
+btnClose = new QPushButton(QString::fromLocal8Bit(&amp;quot;退出&amp;quot;));
+
+
+​		4、通过文本编辑器将文件格式转换为UTF-8 BOM，将转换出来的文件保存，替换QT工程目录下原本的文件，再重启QT，重新构建。
+
+​		我使用的是1-2和3两种方法。
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://mikolee2333.github.io//post/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+            <article class="post i-card">
+                <h2 class="post-title">
                     <a href="https://mikolee2333.github.io//post/videotest">
                         VideoTest
                     </a>
@@ -106,6 +160,11 @@
                 <div class="post-info">
                     <time class="post-time">2019-10-17</time>
                     
+                        <a href="https://mikolee2333.github.io//tag/FvZcDl1zi" class="post-tag i-tag
+                            i-tag-other_1">
+            #CSGO
+        </a>
+                        
                 </div>
                 <div class="post-article">
                     
@@ -166,7 +225,7 @@
                     <!-- 个人信息 -->
                     
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://mikolee2333.github.io//images/avatar.png?v=1571378301513)">
+        <div class="id_card-avatar" style="background-image: url(https://mikolee2333.github.io//images/avatar.png?v=1571814210193)">
         </div>
         <h1 class="id_card-title">
             MikoLee
