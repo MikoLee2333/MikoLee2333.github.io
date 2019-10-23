@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mikolee2333.github.io/</id>
     <title>MikoLee</title>
-    <updated>2019-10-23T07:03:33.919Z</updated>
+    <updated>2019-10-23T07:04:13.721Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mikolee2333.github.io/"/>
     <link rel="self" href="https://mikolee2333.github.io//atom.xml"/>
@@ -16,7 +16,12 @@
         <link href="https://mikolee2333.github.io//post/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang">
         </link>
         <updated>2019-10-23T06:52:00.000Z</updated>
-        <content type="html"><![CDATA[<p>​		最近因为公司的项目是使用的QT+C++，所以在跟着《QT5.9开发指南》开始自学QT，在2.3.2章节教程的中文编码遇到了问题，在下面代码的位置</p>
+        <summary type="html"><![CDATA[<p>​		最近因为公司的项目是使用的QT+C++，所以在跟着《QT5.9开发指南》开始自学QT，在2.3.2章节教程的中文编码遇到了问题.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>​		最近因为公司的项目是使用的QT+C++，所以在跟着《QT5.9开发指南》开始自学QT，在2.3.2章节教程的中文编码遇到了问题.</p>
+<!-- more -->
+<pre><code>   在下面代码的位置:
+</code></pre>
 <pre><code>chkBoxBold = new QCheckBox(tr(&quot;粗体&quot;));
 chkBoxUnder = new QCheckBox(tr(&quot;下划线&quot;));
 chkBoxItalic = new QCheckBox(tr(&quot;斜体&quot;));
