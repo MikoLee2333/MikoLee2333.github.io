@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mikolee2333.github.io/</id>
     <title>MikoLee</title>
-    <updated>2019-11-21T04:24:10.151Z</updated>
+    <updated>2019-11-21T04:25:14.088Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mikolee2333.github.io/"/>
     <link rel="self" href="https://mikolee2333.github.io//atom.xml"/>
@@ -16,7 +16,7 @@
         <link href="https://mikolee2333.github.io//post/delete-slots">
         </link>
         <updated>2019-11-21T04:22:38.000Z</updated>
-        <content type="html"><![CDATA[<h4 id="lnk2019-无法解析的外部符号-private-void-__cdecl-mainwindowon_pushbutton_clickedvoid-on_pushbutton_clickedmainwindowaeaaxxz该符号在函数-private-static-void-__cdecl-mainwindowqt_static_metacallclass-qobject-enum-qmetaobjectcallintvoid-qt_static_metacallmainwindowcaxpeavqobjectw4callqmetaobjecthpeapeaxz-中被引用">LNK2019: 无法解析的外部符号 &quot;private: void __cdecl MainWindow::on_pushButton_clicked(void)&quot; (?on_pushButton_clicked@MainWindow@@AEAAXXZ)，该符号在函数 &quot;private: static void __cdecl MainWindow::qt_static_metacall(class QObject *,enum QMetaObject::Call,int,void * *)&quot; (?qt_static_metacall@MainWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z) 中被引用</h4>
+        <content type="html"><![CDATA[<p>LNK2019: 无法解析的外部符号 &quot;private: void __cdecl MainWindow::on_pushButton_clicked(void)&quot; (?on_pushButton_clicked@MainWindow@@AEAAXXZ)，该符号在函数 &quot;private: static void __cdecl MainWindow::qt_static_metacall(class QObject *,enum QMetaObject::Call,int,void * *)&quot; (?qt_static_metacall@MainWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z) 中被引用</p>
 <h4 id="报错原因">报错原因：</h4>
 <p>在QT的CPP文件中删除了一个不使用的信号函数，导致报错。</p>
 <h4 id="解决方法">解决方法：</h4>
