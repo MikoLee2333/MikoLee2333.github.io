@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mikolee2333.github.io/</id>
     <title>MikoLee</title>
-    <updated>2019-11-21T04:15:37.710Z</updated>
+    <updated>2019-11-21T04:24:10.151Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mikolee2333.github.io/"/>
     <link rel="self" href="https://mikolee2333.github.io//atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://mikolee2333.github.io//images/avatar.png</logo>
     <icon>https://mikolee2333.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, MikoLee</rights>
+    <entry>
+        <title type="html"><![CDATA[LNK2019: 无法解析的外部符号 ]]></title>
+        <id>https://mikolee2333.github.io//post/delete-slots</id>
+        <link href="https://mikolee2333.github.io//post/delete-slots">
+        </link>
+        <updated>2019-11-21T04:22:38.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="lnk2019-无法解析的外部符号-private-void-__cdecl-mainwindowon_pushbutton_clickedvoid-on_pushbutton_clickedmainwindowaeaaxxz该符号在函数-private-static-void-__cdecl-mainwindowqt_static_metacallclass-qobject-enum-qmetaobjectcallintvoid-qt_static_metacallmainwindowcaxpeavqobjectw4callqmetaobjecthpeapeaxz-中被引用">LNK2019: 无法解析的外部符号 &quot;private: void __cdecl MainWindow::on_pushButton_clicked(void)&quot; (?on_pushButton_clicked@MainWindow@@AEAAXXZ)，该符号在函数 &quot;private: static void __cdecl MainWindow::qt_static_metacall(class QObject *,enum QMetaObject::Call,int,void * *)&quot; (?qt_static_metacall@MainWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z) 中被引用</h4>
+<h4 id="报错原因">报错原因：</h4>
+<p>在QT的CPP文件中删除了一个不使用的信号函数，导致报错。</p>
+<h4 id="解决方法">解决方法：</h4>
+<p>删除头文件中的信号函数声明。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于QT MSVC编译器使用中文出现“C2001：常量中有换行符”的情况]]></title>
         <id>https://mikolee2333.github.io//post/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang</id>
@@ -56,6 +69,32 @@
         <updated>2019-10-17T07:23:00.000Z</updated>
         <content type="html"><![CDATA[<h2 id="mikolee-csgocyka-cyka-cyka-blyat">【MikoLee-CSGO】cyka cyka cyka blyat !!!</h2>
 <center><iframe src="//player.bilibili.com/player.html?aid=71150473&cid=123280048&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></center>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://mikolee2333.github.io//post/about</id>
+        <link href="https://mikolee2333.github.io//post/about">
+        </link>
+        <updated>2019-01-25T11:09:48.000Z</updated>
+        <content type="html"><![CDATA[<p>欢迎来到 MikoLee's Bolg 呀，很高兴遇见你！🤝</p>
+<h2 id="关于本站">🌅 关于本站</h2>
+<blockquote>
+<p>随缘博客更新，内容较杂。</p>
+</blockquote>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<blockquote>
+<p>B站扑街UP，刚毕业的苦逼上班族。</p>
+</blockquote>
+<h2 id="兴趣爱好">🙆‍♂ 兴趣爱好</h2>
+<blockquote>
+<p>游戏、视频剪辑、篮球、音乐。</p>
+</blockquote>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p><a href="https://space.bilibili.com/10911670" target="_blank"><img src="https://mikolee2333.github.io//post-images/1571290993350.ico" alt=""></a></p>
+<p><a href="https://weibo.com/u/5657414996" target="_blank"><img src="https://mikolee2333.github.io//post-images/1571291004413.ico" alt=""></a></p>
+<p><a href="https://www.instagram.com/invites/contact/?i=tkyxsc5poaws&utm_content=3pgj8sy" target="_blank"><img src="https://mikolee2333.github.io//post-images/1571291024269.ico" alt=""></a></p>
+<p><a href="https://twitter.com/MikoLevis?s=09" target="_blank"><img src="https://mikolee2333.github.io//post-images/1571291036091.ico" alt=""></a></p>
 ]]></content>
     </entry>
     <entry>

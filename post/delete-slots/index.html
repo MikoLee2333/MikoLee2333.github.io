@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    关于QT MSVC编译器使用中文出现“C2001：常量中有换行符”的情况 | MikoLee
+    LNK2019: 无法解析的外部符号  | MikoLee
 </title>
 <link rel="shortcut icon" href="https://mikolee2333.github.io//favicon.ico?v=1574310245666">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -106,47 +106,19 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            关于QT MSVC编译器使用中文出现“C2001：常量中有换行符”的情况
+                            LNK2019: 无法解析的外部符号 
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2019-10-23</time>
+                            <time class="post-time">2019-11-21</time>
                             
-                                <a href="https://mikolee2333.github.io//tag/jdsBtwNuS" class="post-tag i-tag
-                            i-tag-other_3">
-                            #QT/C++
-                        </a>
-                                
                         </div>
                         
                                 <div class="post-content">
-                                    <p>​		最近因为公司的项目是使用的QT+C++，所以在跟着《QT5.9开发指南》开始自学QT，在2.3.2章节教程的中文编码遇到了问题。</p>
-<!-- more -->
-<p>​		在下面代码的位置</p>
-<pre><code>    chkBoxBold = new QCheckBox(tr(&quot;粗体&quot;));
-    chkBoxUnder = new QCheckBox(tr(&quot;下划线&quot;));
-    chkBoxItalic = new QCheckBox(tr(&quot;斜体&quot;));
-</code></pre>
-<p>​		编译报错 <u>C2001：常量中有换行符</u> ，在网络上查询资料及部分博客后，总结了以下几种解决方法：</p>
-<hr>
-<p>​		1、修改QT设置。</p>
-<p>​		具体位置：Tools-&gt;Options-&gt;Text Editor-&gt;Behavior-&gt;File Encodings-&gt;UTF-8 BOM，将其修改为<u>Add If Encoding is UTF-8</u> 。</p>
-<figure data-type="image" tabindex="1"><img src="https://mikolee2333.github.io//post-images/1571814040459.png" alt=""></figure>
-<p>​		然后点击Apply，再点击OK，最后重启QT。此时你就会发现QT中文编译将不会报错，但是中文却变成乱码了。</p>
-<p>​		解决乱码方法有以下两种：</p>
-<p>​				1-1  将代码中每一个中文都用用<code>QStringLiteral()</code>括起来（麻烦，不建议）；</p>
-<p>​				1-2  在对应的.cpp文件前加上<code>#pragma execution_characte上r_set(&quot;utf-8&quot;)</code>。</p>
-<hr>
-<p>​		2、将中文改为英文（笑）</p>
-<hr>
-<p>​		3、在代码中使用中文的地方将中文使用 <code>QString::fromLocal8Bit()</code>括起来，如下所示：</p>
-<pre><code>    btnOK = new QPushButton(QString::fromLocal8Bit(&quot;确定&quot;));
-    btnCancel = new QPushButton(QString::fromLocal8Bit(&quot;取消&quot;));
-    btnClose = new QPushButton(QString::fromLocal8Bit(&quot;退出&quot;));
-</code></pre>
-<hr>
-<p>​		4、通过文本编辑器将文件格式转换为UTF-8 BOM，将转换出来的文件保存，替换QT工程目录下原本的文件，再重启QT，重新构建。</p>
-<hr>
-<p>​		我使用的是1-2和3两种方法。</p>
+                                    <h4 id="lnk2019-无法解析的外部符号-private-void-__cdecl-mainwindowon_pushbutton_clickedvoid-on_pushbutton_clickedmainwindowaeaaxxz该符号在函数-private-static-void-__cdecl-mainwindowqt_static_metacallclass-qobject-enum-qmetaobjectcallintvoid-qt_static_metacallmainwindowcaxpeavqobjectw4callqmetaobjecthpeapeaxz-中被引用">LNK2019: 无法解析的外部符号 &quot;private: void __cdecl MainWindow::on_pushButton_clicked(void)&quot; (?on_pushButton_clicked@MainWindow@@AEAAXXZ)，该符号在函数 &quot;private: static void __cdecl MainWindow::qt_static_metacall(class QObject *,enum QMetaObject::Call,int,void * *)&quot; (?qt_static_metacall@MainWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z) 中被引用</h4>
+<h4 id="报错原因">报错原因：</h4>
+<p>在QT的CPP文件中删除了一个不使用的信号函数，导致报错。</p>
+<h4 id="解决方法">解决方法：</h4>
+<p>删除头文件中的信号函数声明。</p>
 
                                 </div>
                     </article>
@@ -154,9 +126,9 @@
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://mikolee2333.github.io//post/videotest">
+                            <a href="https://mikolee2333.github.io//post/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang">
                                 <h3 class="post-title">
-                                    VideoTest
+                                    关于QT MSVC编译器使用中文出现“C2001：常量中有换行符”的情况
                                 </h3>
                             </a>
                         </div>
@@ -169,32 +141,56 @@
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://mikolee2333.github.io//images/avatar.png?v=1574310245666)">
-        </div>
-        <h1 class="id_card-title">
-            MikoLee
-        </h1>
-        <h2 class="id_card-description">
-            I thank the Lord that he made you.
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#lnk2019-%E6%97%A0%E6%B3%95%E8%A7%A3%E6%9E%90%E7%9A%84%E5%A4%96%E9%83%A8%E7%AC%A6%E5%8F%B7-private-void-__cdecl-mainwindowon_pushbutton_clickedvoid-on_pushbutton_clickedmainwindowaeaaxxz%E8%AF%A5%E7%AC%A6%E5%8F%B7%E5%9C%A8%E5%87%BD%E6%95%B0-private-static-void-__cdecl-mainwindowqt_static_metacallclass-qobject-enum-qmetaobjectcallintvoid-qt_static_metacallmainwindowcaxpeavqobjectw4callqmetaobjecthpeapeaxz-%E4%B8%AD%E8%A2%AB%E5%BC%95%E7%94%A8">LNK2019: 无法解析的外部符号 &quot;private: void __cdecl MainWindow::on_pushButton_clicked(void)&quot; (?on_pushButton_clicked@MainWindow@@AEAAXXZ)，该符号在函数 &quot;private: static void __cdecl MainWindow::qt_static_metacall(class QObject *,enum QMetaObject::Call,int,void * *)&quot; (?qt_static_metacall@MainWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z) 中被引用</a></li>
+<li><a href="#%E6%8A%A5%E9%94%99%E5%8E%9F%E5%9B%A0">报错原因：</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95">解决方法：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 
                 </div>
 
