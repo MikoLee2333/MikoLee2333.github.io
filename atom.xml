@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mikolee2333.github.io/</id>
     <title>MikoLee</title>
-    <updated>2019-11-21T04:25:14.088Z</updated>
+    <updated>2019-11-21T04:25:47.995Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mikolee2333.github.io/"/>
     <link rel="self" href="https://mikolee2333.github.io//atom.xml"/>
@@ -16,12 +16,6 @@
         <link href="https://mikolee2333.github.io//post/delete-slots">
         </link>
         <updated>2019-11-21T04:22:38.000Z</updated>
-        <content type="html"><![CDATA[<p>LNK2019: 无法解析的外部符号 &quot;private: void __cdecl MainWindow::on_pushButton_clicked(void)&quot; (?on_pushButton_clicked@MainWindow@@AEAAXXZ)，该符号在函数 &quot;private: static void __cdecl MainWindow::qt_static_metacall(class QObject *,enum QMetaObject::Call,int,void * *)&quot; (?qt_static_metacall@MainWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z) 中被引用</p>
-<h4 id="报错原因">报错原因：</h4>
-<p>在QT的CPP文件中删除了一个不使用的信号函数，导致报错。</p>
-<h4 id="解决方法">解决方法：</h4>
-<p>删除头文件中的信号函数声明。</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于QT MSVC编译器使用中文出现“C2001：常量中有换行符”的情况]]></title>
@@ -32,33 +26,6 @@
         <summary type="html"><![CDATA[<p>​		最近因为公司的项目是使用的QT+C++，所以在跟着《QT5.9开发指南》开始自学QT，在2.3.2章节教程的中文编码遇到了问题。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>​		最近因为公司的项目是使用的QT+C++，所以在跟着《QT5.9开发指南》开始自学QT，在2.3.2章节教程的中文编码遇到了问题。</p>
-<!-- more -->
-<p>​		在下面代码的位置</p>
-<pre><code>    chkBoxBold = new QCheckBox(tr(&quot;粗体&quot;));
-    chkBoxUnder = new QCheckBox(tr(&quot;下划线&quot;));
-    chkBoxItalic = new QCheckBox(tr(&quot;斜体&quot;));
-</code></pre>
-<p>​		编译报错 <u>C2001：常量中有换行符</u> ，在网络上查询资料及部分博客后，总结了以下几种解决方法：</p>
-<hr>
-<p>​		1、修改QT设置。</p>
-<p>​		具体位置：Tools-&gt;Options-&gt;Text Editor-&gt;Behavior-&gt;File Encodings-&gt;UTF-8 BOM，将其修改为<u>Add If Encoding is UTF-8</u> 。</p>
-<figure data-type="image" tabindex="1"><img src="https://mikolee2333.github.io//post-images/1571814040459.png" alt=""></figure>
-<p>​		然后点击Apply，再点击OK，最后重启QT。此时你就会发现QT中文编译将不会报错，但是中文却变成乱码了。</p>
-<p>​		解决乱码方法有以下两种：</p>
-<p>​				1-1  将代码中每一个中文都用用<code>QStringLiteral()</code>括起来（麻烦，不建议）；</p>
-<p>​				1-2  在对应的.cpp文件前加上<code>#pragma execution_characte上r_set(&quot;utf-8&quot;)</code>。</p>
-<hr>
-<p>​		2、将中文改为英文（笑）</p>
-<hr>
-<p>​		3、在代码中使用中文的地方将中文使用 <code>QString::fromLocal8Bit()</code>括起来，如下所示：</p>
-<pre><code>    btnOK = new QPushButton(QString::fromLocal8Bit(&quot;确定&quot;));
-    btnCancel = new QPushButton(QString::fromLocal8Bit(&quot;取消&quot;));
-    btnClose = new QPushButton(QString::fromLocal8Bit(&quot;退出&quot;));
-</code></pre>
-<hr>
-<p>​		4、通过文本编辑器将文件格式转换为UTF-8 BOM，将转换出来的文件保存，替换QT工程目录下原本的文件，再重启QT，重新构建。</p>
-<hr>
-<p>​		我使用的是1-2和3两种方法。</p>
 ]]></content>
     </entry>
     <entry>
@@ -67,9 +34,6 @@
         <link href="https://mikolee2333.github.io//post/videotest">
         </link>
         <updated>2019-10-17T07:23:00.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="mikolee-csgocyka-cyka-cyka-blyat">【MikoLee-CSGO】cyka cyka cyka blyat !!!</h2>
-<center><iframe src="//player.bilibili.com/player.html?aid=71150473&cid=123280048&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe></center>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于]]></title>
@@ -77,25 +41,6 @@
         <link href="https://mikolee2333.github.io//post/about">
         </link>
         <updated>2019-01-25T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<p>欢迎来到 MikoLee's Bolg 呀，很高兴遇见你！🤝</p>
-<h2 id="关于本站">🌅 关于本站</h2>
-<blockquote>
-<p>随缘博客更新，内容较杂。</p>
-</blockquote>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<blockquote>
-<p>B站扑街UP，刚毕业的苦逼上班族。</p>
-</blockquote>
-<h2 id="兴趣爱好">🙆‍♂ 兴趣爱好</h2>
-<blockquote>
-<p>游戏、视频剪辑、篮球、音乐。</p>
-</blockquote>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p><a href="https://space.bilibili.com/10911670" target="_blank"><img src="https://mikolee2333.github.io//post-images/1571290993350.ico" alt=""></a></p>
-<p><a href="https://weibo.com/u/5657414996" target="_blank"><img src="https://mikolee2333.github.io//post-images/1571291004413.ico" alt=""></a></p>
-<p><a href="https://www.instagram.com/invites/contact/?i=tkyxsc5poaws&utm_content=3pgj8sy" target="_blank"><img src="https://mikolee2333.github.io//post-images/1571291024269.ico" alt=""></a></p>
-<p><a href="https://twitter.com/MikoLevis?s=09" target="_blank"><img src="https://mikolee2333.github.io//post-images/1571291036091.ico" alt=""></a></p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
@@ -108,25 +53,6 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
