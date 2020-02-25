@@ -1,0 +1,363 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    PicGo配合GitHub搭建属于自己的图床 | MikoLee
+</title>
+<link rel="shortcut icon" href="https://mikolee2333.github.io//favicon.ico?v=1582646917471">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://mikolee2333.github.io//styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://mikolee2333.github.io//media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
+
+                    
+                            
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://mikolee2333.github.io/">
+                <img class="avatar" src="https://mikolee2333.github.io//images/avatar.png?v=1582646917471" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    MikoLee
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            PicGo配合GitHub搭建属于自己的图床
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2020-02-25</time>
+                            
+                                <a href="https://mikolee2333.github.io/tag/Hv-hOgVvj/" class="post-tag i-tag
+                            i-tag-other_4">
+                            #GitHub图床
+                        </a>
+                                
+                                <a href="https://mikolee2333.github.io/tag/HNTY08RIKM/" class="post-tag i-tag
+                            i-tag-other_3">
+                            #PicGo
+                        </a>
+                                
+                        </div>
+                        
+                                <div class="post-content">
+                                    <h1 id="picgo配合github搭建属于自己的图床">PicGo配合GitHub搭建属于自己的图床</h1>
+<p>最近由于Hlae中文站的开通，相信有发帖需求的各位最近一定被markdown如何添加图片烦到了，这里我来给大家写一个简单地gGitHub图床的教程，希望可以帮助到大家。</p>
+<p>下面正式开始：</p>
+<h2 id="第一步github账号配置">第一步：GitHub账号配置</h2>
+<p>首先你得拥有一个<code>GitHub账号</code>，没有的话你得先申请一个，<a href="https://github.com/">点此处申请GitHub账号</a></p>
+<p>申请账号后，请登录账号，接下来我们正式开始GitHub图床的配置</p>
+<hr>
+<ol>
+<li>首先来到账号首页</li>
+</ol>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225222024.png" style="zoom: 67%;" />
+<p>​	先点击 <code>头像旁边的小三角</code> ，接着点击 <code>Your repositories</code> ,进入 Repository 界面</p>
+<hr>
+<ol start="2">
+<li>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225223223.png" style="zoom:67%;" />
+</li>
+</ol>
+<p>​	点击 <code>New Repository</code> 新建一个仓库</p>
+<hr>
+<ol start="3">
+<li>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225223518.png" style="zoom:67%;" />
+<p>从上往下依次为：</p>
+</li>
+</ol>
+<pre><code>Repository name -&gt; 仓库名		//此项必填，后面会用到
+
+Description -&gt; 仓库描述			//可填可不填
+
+Public or Private -&gt; 仓库权限，公有或私有，具体自己去了解					//两个都可以
+
+Initialize this repository with a README -&gt; 为仓库初始化一个说明文档	//可选可不选
+
+Create Repository -&gt; 创建仓库 	//不多解释了
+</code></pre>
+<p>​	按照上面的信息填完，我们需要 <strong><code>Repository name</code></strong> ，后面 <code>PicGo的配置</code> 会用到它</p>
+<hr>
+<ol start="4">
+<li>
+<p>获取图床的Token</p>
+<p>点击<code>头像旁边的小三角</code> ，然后点击 <code>Settings</code> ，进入个人设置页面</p>
+</li>
+</ol>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225225812.png"  />
+<p>​		点击 <code>Developer settings</code> ，进入开发者设置页面</p>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225230058.png" alt="" loading="lazy"></figure>
+<p>​	点击 <code>Personal access tokens</code> ，进入token管理页面</p>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225230212.png" alt="" loading="lazy"></figure>
+<p>​	点击 <code>Generate new token</code> ，创建新的token</p>
+<figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225233239.png" alt="" loading="lazy"></figure>
+<p>​	note栏为token的说明，你可以填你想填的任何东西</p>
+<p>​	然后勾选 <code>repo</code> ，将页面拉到最下方，点击 <code>Generate token</code> ，创建token</p>
+<figure data-type="image" tabindex="4"><img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225230810.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225231002.png" alt="" loading="lazy"></figure>
+<p>​	此时出现的这串代码就是token，这个只会出现一次，请将其保存下来，接下来 <code>PicGo的配置</code> 我们会用到它</p>
+<figure data-type="image" tabindex="6"><img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225231125.png" alt="" loading="lazy"></figure>
+<hr>
+<h2 id="picgo的安装与配置">PicGo的安装与配置</h2>
+<h3 id="picgo的安装">PicGo的安装</h3>
+<p>​	下载-&gt; <a href="https://github.com/Molunerfinn/PicGo/releases">PicGo</a> &lt;-</p>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225215654.png" style="zoom: 50%;" />
+<p>​	MacOS下载.dmg格式的文件，Windows下载.exe格式的文件</p>
+<p>​	安装一直next就行</p>
+<hr>
+<h3 id="picgo的配置">PicGo的配置</h3>
+<ol>
+<li>安装结束后打开软件设置页面</li>
+</ol>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225220005.png" style="zoom: 67%;" />
+<hr>
+<ol start="2">
+<li>
+<p>勾选GitHub图床，当然你也可以使用其他图床，但是这里我只说GitHub图床哈</p>
+<p>​	接下来，点击 <code>图床设置 -&gt; GitHub图床</code></p>
+</li>
+</ol>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225221200.png" style="zoom:67%;" />
+<p>​	从上往下五项分别是：</p>
+<ul>
+<li>
+<p>仓库名，即前面的 <code>owner / Repository name</code>，例如我的，就是 <code>MikoLee2333/PicGoPhoto</code></p>
+</li>
+<li>
+<p>分支名，默认为 <code>master</code> ，自行填写即可</p>
+</li>
+<li>
+<p>Token，即上面我们让保存的一长串字符，复制填入即可</p>
+</li>
+<li>
+<p>存储路径，自行填写，可以参照我的来填，之后上传图片后会在你的GitHub仓库生成对应的文件夹，你上传的图片也会保存在里面</p>
+</li>
+<li>
+<p>自定义域名，<em><strong>此处请注意，格式有要求</strong></em>，格式必须为</p>
+<p><code>https://raw.githubusercontent.com/Owner/Repository name/master</code>，</p>
+<p>例如我的则是<code>https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master</code></p>
+<p>该域名则是你将图片上传到GitHub图床后的链接</p>
+<hr>
+</li>
+</ul>
+<ol start="3">
+<li>
+<p>其他设置</p>
+<p>点击 <code>上传区</code> ，可以看到，图片上传后返回的格式默认是markdown的图片链接格式，如此，就可以随心所欲的使用markdown进行图片的插入了</p>
+</li>
+</ol>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225233157.png" style="zoom:67%;" />
+<p>​		点击 <code>PicGo设置</code> ，进入PicGo设置页面，打开 <code>开机自启</code> 选项</p>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225233423.png" style="zoom:67%;" />
+<p>​		点击 <code>修改快捷键</code> ，进入快捷键设置界面</p>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225233707.png" style="zoom:67%;" />
+<p>​		点击 <code>编辑</code> ，修改快捷键，设置成你喜欢的快捷键</p>
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225233809.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master/img/PicGo20200225234252.png" style="zoom:67%;" />
+<hr>
+<p>到这里，一个配合PicGo使用，能够迅速上传GitHub图库就大功告成了。</p>
+<p>至于截图软件，就看你们自己的选择了，市面上的截图软件很多，你甚至可以用<code>QQ截图</code>，这里推荐的截图软件名字叫做 <code>ShareX</code></p>
+<p>具体使用方法：</p>
+<p>​	<s><em>本站已和百度、谷歌、搜狗等各大搜索引擎厂商达成战略合作伙伴关系，有什么不懂得地方直接在网站进行搜索即可解决。</em></s></p>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://mikolee2333.github.io/post/delete-slots/">
+                                <h3 class="post-title">
+                                    QT报错   LNK2019: 无法解析的外部符号 
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#picgo%E9%85%8D%E5%90%88github%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9B%BE%E5%BA%8A">PicGo配合GitHub搭建属于自己的图床</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A5github%E8%B4%A6%E5%8F%B7%E9%85%8D%E7%BD%AE">第一步：GitHub账号配置</a></li>
+<li><a href="#picgo%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE">PicGo的安装与配置</a>
+<ul>
+<li><a href="#picgo%E7%9A%84%E5%AE%89%E8%A3%85">PicGo的安装</a></li>
+<li><a href="#picgo%E7%9A%84%E9%85%8D%E7%BD%AE">PicGo的配置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
+    </div>
+    
+                            
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://mikolee2333.github.io//atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: '13ff307ba74538ade422',
+            clientSecret: '39abc8ced8eca429e3b37dd5b7bfc2e0be6f9d69',
+            repo: 'MikoLee2333.github.io',
+            owner: 'MikoLee2333',
+            admin: ['MikoLee2333'],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
+
+                    
+                                
+</body>
+
+</html>
