@@ -1,357 +1,184 @@
 <html>
-
-<head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>
-    MikoLee
-</title>
-<link rel="shortcut icon" href="https://mikolee2333.github.io//favicon.ico?v=1582647274150">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://mikolee2333.github.io//styles/main.css">
-<!-- js -->
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://mikolee2333.github.io//media/js/jquery.sticky-sidebar.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
-
-
-</head>
-
-<body>
-    <div class="main">
-        <div class="header">
-    <div class="nav">
-        <div class="logo">
-            <a href="https://mikolee2333.github.io/">
-                <img class="avatar" src="https://mikolee2333.github.io//images/avatar.png?v=1582647274150" alt="">
-            </a>
-            <div class="site-title">
-                <h1>
-                    MikoLee
-                </h1>
-            </div>
-        </div>
-        <span class="menu-btn fa fa-align-justify"></span>
-        <div class="menu-container">
-            <ul>
-                
-                    
-                            <li>
-                                <a href="/" class="menu">
-                                    首页
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/archives" class="menu">
-                                    归档
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/tags" class="menu">
-                                    标签
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/post/about" class="menu">
-                                    关于
-                                </a>
-                            </li>
-                            
-                                
-            </ul>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(document).ready(function() {
-        $(".menu-btn").click(function() {
-            $(".menu-container").slideToggle();
-        });
-        $(window).resize(function() {
-
-            if (window.matchMedia('(min-width: 960px)').matches) {
-                $(".menu-container").css('display', 'block')
-            } else {
-                $(".menu-container").css('display', 'none')
-            }
-
-        });
-    });
-</script>
-
-            <div id="main-content" class="post-container main-container">
-                <div id="content" class="main-container-left">
-                    
+      <head>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+        <meta charset="utf-8">
+        <meta name="referrer" content="never">
+        <title>MikoLee</title>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css">
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://mikolee2333.github.io//styles/main.css">
+          <script src="https://mikolee2333.github.io//media/scripts/mdui.min.js"></script>
+        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ma+Shan+Zheng&display=swap" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+        <script src="https://mikolee2333.github.io//media/scripts/script.js"></script>
+        <script >hljs.initHighlightingOnLoad();</script>
         
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://mikolee2333.github.io/post/PicGoWithGitHub/">
-                        PicGo配合GitHub搭建属于自己的图床
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2020-02-25</time>
-                    
-                        <a href="https://mikolee2333.github.io/tag/Hv-hOgVvj/" class="post-tag i-tag
-                            i-tag-error">
-            #GitHub图床
-        </a>
-                        
-                        <a href="https://mikolee2333.github.io/tag/HNTY08RIKM/" class="post-tag i-tag
-                            i-tag-primary">
-            #PicGo
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            PicGo配合GitHub搭建属于自己的图床
+
+    </head>
+    <body class="mdui-theme-primary-purple mdui-theme-accent-purple">
+        <header class=" mdui-m-b-3 header">
+                          <button class="mdui-btn daohang mdui-btn-icon mdui-btn-dense mdui-color-theme-500 mdui-ripple yinying mdui-m-t-1 mdui-m-l-1" mdui-menu="{target: '#demo-attr-cascade'}"><i class="mdui-icon material-icons">&#xe5d2;</i></button>
+                <ul class="mdui-menu " id="demo-attr-cascade">
+                
+                        <li class="mdui-menu-item">
+                          <a href="/" class="mdui-ripple">首页</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="/archives" class="mdui-ripple">归档</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="/tags" class="mdui-ripple">标签</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="/post/about" class="mdui-ripple">关于</a>
+                        </li>
+                
+                      </ul>
+                      <div class="mdui-text-center">
+                      <div class="mdui-typo-display-4 mdui-m-b-3 index-title">MikoLee</div>
+                      <div class="mdui-typo-headline">I thank the Lord that he made you.</div>
+                      </div>
+
+        </header >
+        <div class="mdui-container">
+                <div class="mdui-row">
+                        <div class="mdui-col-md-6 mdui-col-offset-md-3 ">
+                                                     
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://mikolee2333.github.io/post/CVdelHBQD/" class="index-list-title">解决Tomcat9中控制台中文输出乱码的问题</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>今天学习Java的时候需要部署Tomcat，所以去官网下载了压缩包、配置好了环境变量，成功启动Tomcat服务，但是控制台缺输出了一堆中文乱码。
+
+我在网上找了挺久也没找到对应的方法，最后在一个评论里看见了解决的方法。
+控制台输出应该是用的...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8" style="background-image:url(https://mikolee2333.github.io//post-images/CVdelHBQD.png)"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://mikolee2333.github.io/tag/xNqdU7UuW/" class="index-list-biaoqian mdui-float-left yinying">JAVA</a>
+                                               
+                                              <a href="https://mikolee2333.github.io/tag/snCXEAeqm3/" class="index-list-biaoqian mdui-float-left yinying">Tomcat</a>
+                                               
+                                              <a href="https://mikolee2333.github.io/tag/yYHjAoyDx9/" class="index-list-biaoqian mdui-float-left yinying">乱码</a>
+                                               
+                                              <a href="https://mikolee2333.github.io/post/CVdelHBQD/" class="index-list-biaoqian mdui-float-right yinying">2020-05-15</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://mikolee2333.github.io/post/PicGoWithGitHub/" class="index-list-title">PicGo配合GitHub搭建属于自己的图床</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>PicGo配合GitHub搭建属于自己的图床
 最近由于Hlae中文站的开通，相信有发帖需求的各位最近一定被markdown如何添加图片烦到了，这里我来给大家写一个简单地gGitHub图床的教程，希望可以帮助到大家。
 下面正式开始：
-第一步：GitHub账号配置
-首先你得拥有一个GitHub账号，没有的话你得先申请一个，点此处申请GitHub账号
-申请账号后，请登录账号，接下来我们正式开始GitHub图床的配置
-
-
-首先来到账号首页
-
-
-​	先点击 头像旁边的小三角 ，接着点击 Your repositories ,进入 Repository 界面
-
-
-
-
-
-
-​	点击 New Repository 新建一个仓库
-
-
-
-
-从上往下依次为：
-
-
-Repository name -&amp;gt; 仓库名		//此项必填，后面会用到
-
-Description -&amp;gt; 仓库描述			//可填可不填
-
-Public or Private -&amp;gt; 仓库权限，公有或私有，具体自己去了解					//两个都可以
-
-Initialize this repository with a README -&amp;gt; 为仓库初始化一个说明文档	//可选可不选
-
-Create Repository -&amp;gt; 创建仓库 	//不多解释了
-
-​	按照上面的信息填完，我们需要 Repository name ，后面 PicGo的配置 会用到它
-
-
-
-获取图床的Token
-点击头像旁边的小三角 ，然后点击 Settings ，进入个人设置页面
-
-
-
-​		点击 Developer settings ，进入开发者设置页面
-
-​	点击 Personal access tokens ，进入token管理页面
-
-​	点击 Generate new token ，创建新的token
-
-​	note栏为token的说明，你可以填你想填的任何东西
-​	然后勾选 repo ，将页面拉到最下方，点击 Generate token ，创建token
-
-
-​	此时出现的这串代码就是token，这个只会出现一次，请将其保存下来，接下来 PicGo的配置 我们会用到它
-
-
-PicGo的安装与配置
-PicGo的安装
-​	下载-&amp;gt; PicGo &amp;lt;-
-
-​	MacOS下载.dmg格式的文件，Windows下载.exe格式的文件
-​	安装一直next就行
-
-PicGo的配置
-
-安装结束后打开软件设置页面
-
-
-
-
-
-勾选GitHub图床，当然你也可以使用其他图床，但是这里我只说GitHub图床哈
-​	接下来，点击 图床设置 -&amp;gt; GitHub图床
-
-
-
-​	从上往下五项分别是：
-
-
-仓库名，即前面的 owner / Repository name，例如我的，就是 MikoLee2333/PicGoPhoto
-
-
-分支名，默认为 master ，自行填写即可
-
-
-Token，即上面我们让保存的一长串字符，复制填入即可
-
-
-存储路径，自行填写，可以参照我的来填，之后上传图片后会在你的GitHub仓库生成对应的文件夹，你上传的图片也会保存在里面
-
-
-自定义域名，此处请注意，格式有要求，格式必须为
-https://raw.githubusercontent.com/Owner/Repository name/master，
-例如我的则是https://raw.githubusercontent.com/MikoLee2333/PicGoPhoto/master
-该域名则是你将图片上传到GitHub图床后的链接
-
-
-
-
-
-其他设置
-点击 上传区 ，可以看到，图片上传后返回的格式默认是markdown的图片链接格式，如此，就可以随心所欲的使用markdown进行图片的插入了
-
-
-
-​		点击 PicGo设置 ，进入PicGo设置页面，打开 开机自启 选项
-
-​		点击 修改快捷键 ，进入快捷键设置界面
-
-​		点击 编辑 ，修改快捷键，设置成你喜欢的快捷键
-
-
-
-到这里，一个配合PicGo使用，能够迅速上传GitHub图库就大功告成了。
-至于截图软件，就看你们自己的选择了，市面上的截图软件很多，你甚至可以用QQ截图，这里推荐的截图软件名字叫做 ShareX
-具体使用方法：
-​	本站已和百度、谷歌、搜狗等各大搜索引擎厂商达成战略合作伙伴关系，有什么不懂得地方直接在网站进行搜索即可解决。
-
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="https://mikolee2333.github.io/post/PicGoWithGitHub/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://mikolee2333.github.io/post/delete-slots/">
-                        QT报错   LNK2019: 无法解析的外部符号 
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2019-11-21</time>
-                    
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            LNK2019: 无法解析的外部符号
+第一步：...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8" style="background-image:url(https://mikolee2333.github.io//post-images/PicGoWithGitHub.png)"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://mikolee2333.github.io/tag/Hv-hOgVvj/" class="index-list-biaoqian mdui-float-left yinying">GitHub图床</a>
+                                               
+                                              <a href="https://mikolee2333.github.io/tag/HNTY08RIKM/" class="index-list-biaoqian mdui-float-left yinying">PicGo</a>
+                                               
+                                              <a href="https://mikolee2333.github.io/post/PicGoWithGitHub/" class="index-list-biaoqian mdui-float-right yinying">2020-02-25</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://mikolee2333.github.io/post/delete-slots/" class="index-list-title">QT报错   LNK2019: 无法解析的外部符号 </a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>LNK2019: 无法解析的外部符号
 报错原因：
 在QT的CPP文件中删除了一个不使用的信号函数，导致报错。
 解决方法：
 删除头文件中的信号函数声明。
+...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8" style="background-image:url(https://mikolee2333.github.io//post-images/delete-slots.png)"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://mikolee2333.github.io/post/delete-slots/" class="index-list-biaoqian mdui-float-right yinying">2019-11-21</a>
+                                              
 
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="https://mikolee2333.github.io/post/delete-slots/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://mikolee2333.github.io/post/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang/">
-                        关于QT MSVC编译器使用中文出现“C2001：常量中有换行符”的情况
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2019-10-23</time>
-                    
-                        <a href="https://mikolee2333.github.io/tag/jdsBtwNuS/" class="post-tag i-tag
-                            i-tag-primary">
-            #QT/C++
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
-                                
-                                    <div class="post-content-abstract">
-                                        <p>​		最近因为公司的项目是使用的QT+C++，所以在跟着《QT5.9开发指南》开始自学QT，在2.3.2章节教程的中文编码遇到了问题。</p>
+                                            </div>
+                                          </div>
 
-                                    </div>
-                                    
-                                            <a class="btn btn-text" href="https://mikolee2333.github.io/post/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://mikolee2333.github.io/post/videotest/">
-                        VideoTest
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2019-10-17</time>
-                    
-                        <a href="https://mikolee2333.github.io/tag/FvZcDl1zi/" class="post-tag i-tag
-                            i-tag-primary">
-            #CSGO
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            【MikoLee-CSGO】cyka cyka cyka blyat !!!
- 
+                            </article>
 
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="https://mikolee2333.github.io/post/videotest/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://mikolee2333.github.io/post/about/">
-                        关于
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2019-01-25</time>
-                    
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
-                                
-                                        <div class="post-content-content">
-                                            欢迎来到 MikoLee&#39;s Bolg 呀，很高兴遇见你！🤝
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://mikolee2333.github.io/post/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang/" class="index-list-title">关于QT MSVC编译器使用中文出现“C2001：常量中有换行符”的情况</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>​		最近因为公司的项目是使用的QT+C++，所以在跟着《QT5.9开发指南》开始自学QT，在2.3.2章节教程的中文编码遇到了问题。
+
+​		在下面代码的位置
+    chkBoxBold = new QCheckBox(tr(&quot...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8" style="background-image:url(https://mikolee2333.github.io//post-images/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang.png)"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://mikolee2333.github.io/tag/jdsBtwNuS/" class="index-list-biaoqian mdui-float-left yinying">QT/C++</a>
+                                               
+                                              <a href="https://mikolee2333.github.io/post/guan-yu-qt-msvc-bian-yi-qi-shi-yong-zhong-wen-chu-xian-c2001chang-liang-zhong-you-huan-xing-fu-de-qing-kuang/" class="index-list-biaoqian mdui-float-right yinying">2019-10-23</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://mikolee2333.github.io/post/videotest/" class="index-list-title">VideoTest</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>【MikoLee-CSGO】cyka cyka cyka blyat !!!
+ ...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8" style="background-image:url(https://mikolee2333.github.io//post-images/videotest.png)"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://mikolee2333.github.io/tag/FvZcDl1zi/" class="index-list-biaoqian mdui-float-left yinying">CSGO</a>
+                                               
+                                              <a href="https://mikolee2333.github.io/post/videotest/" class="index-list-biaoqian mdui-float-right yinying">2019-10-17</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://mikolee2333.github.io/post/about/" class="index-list-title">关于</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>欢迎来到 MikoLee's Bolg 呀，很高兴遇见你！🤝
 🌅 关于本站
 
 随缘博客更新，内容较杂。
@@ -364,110 +191,90 @@ B站扑街UP，刚毕业的苦逼上班族。
 
 游戏、视频剪辑、篮球、音乐。
 
-📬 联系我呀
+📬 联系我呀...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8" style="background-image:url(https://mikolee2333.github.io//post-images/about.png)"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://mikolee2333.github.io/post/about/" class="index-list-biaoqian mdui-float-right yinying">2019-01-25</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://mikolee2333.github.io/post/hello-gridea/" class="index-list-title">Hello Gridea</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>👏  欢迎使用 Gridea ！
+✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...
+
+Github
+Gridea 主页
+示例网站
+特性👇
+📝  你可以使用最酷的 Markdo...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8" style="background-image:url(https://mikolee2333.github.io//post-images/hello-gridea.png)"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://mikolee2333.github.io/tag/pZ8RMBwEZ/" class="index-list-biaoqian mdui-float-left yinying">Gridea</a>
+                                               
+                                              <a href="https://mikolee2333.github.io/post/hello-gridea/" class="index-list-biaoqian mdui-float-right yinying">2018-12-12</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
 
 
+                                                   <nav class="mdui-m-y-3">
+                         
+                         
+                         </nav>
 
-
-
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="https://mikolee2333.github.io/post/about/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://mikolee2333.github.io/post/hello-gridea/">
-                        Hello Gridea
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2018-12-12</time>
-                    
-                        <a href="https://mikolee2333.github.io/tag/pZ8RMBwEZ/" class="post-tag i-tag
-                            i-tag-error">
-            #Gridea
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                        <a href="https://mikolee2333.github.io/post/hello-gridea/" class="post-feature-image" style="background-image:url(https://mikolee2333.github.io//post-images/hello-gridea.png) ">
-                        </a>
-                        
-                            <div class="post-content">
-                                
-                                    <div class="post-content-abstract">
-                                        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-                                    </div>
-                                    
-                                            <a class="btn btn-text" href="https://mikolee2333.github.io/post/hello-gridea/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-                <!-- 翻页 -->
-                
-                </div>
-                <!--  -->
-                <div class="main-container-middle"></div>
-                <!--  -->
-                <div id="sidebar" class="main-container-right">
-
-                    <!-- 个人信息 -->
-                    
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://mikolee2333.github.io//images/avatar.png?v=1582647274150)">
+                        </div>
+                 </div>
+          
         </div>
-        <h1 class="id_card-title">
-            MikoLee
-        </h1>
-        <h2 class="id_card-description">
-            I thank the Lord that he made you.
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
+        <footer class="footer mdui-m-t-5 mdui-text-center">
+               <nav class="social-links">
+                      <ul>
+                      
                             
-                                    <!-- facebook -->
-                                    
-
-        </div>
-    </div>
-    
-
-                        <!-- 公告栏 -->
-                        
-
-                </div>
-            </div>
-
-
-
-            <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://mikolee2333.github.io//atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
-    </div>
-    <script>
-        $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
-        });
-    </script>
-</body>
-
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                      </ul>
+                    </nav>
+                    <div class="copyright">
+                      <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> <br/> Theme <a href="https://github.com/shanbufun/gridea-theme-jia" target="_blank"  title="佳"  >Jia</a> by <a href="https://shanbu.fun/" target="_blank"  title="山卜方" >Shanbufun</a> </p>
+                  </div>
+              </footer>
+    </body>
 </html>
